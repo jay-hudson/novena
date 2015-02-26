@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+source 'https://rails-assets.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
@@ -16,8 +16,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -26,6 +25,22 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+gem 'rails-assets-angular', '1.3.8'
+gem 'rails-assets-angular-mocks'
+gem 'rails-assets-angular-ui-router'
+gem 'rails-assets-angular-resource'
+gem 'rails-assets-angular-touch'
+gem 'rails-assets-angular-cookies'
+
+group :development, :test do
+  gem 'jasmine'
+end
+
+gem 'bootstrap-sass'
+gem 'haml-rails'
+
+gem 'thin', group: [:development, :test]
+gem 'unicorn', group: :production
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -37,4 +52,5 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
 
